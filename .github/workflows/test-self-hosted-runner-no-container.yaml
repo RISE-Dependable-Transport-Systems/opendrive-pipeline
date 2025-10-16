@@ -1,0 +1,7 @@
+name: test-self-hosted-runner-no-container
+on: workflow_dispatch
+jobs:
+  ci:
+    runs-on: [self-hosted, home-runners]
+    steps:
+      - run: echo ok
